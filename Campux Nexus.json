@@ -1,0 +1,182 @@
+{
+    "schema": {
+        "options": {},
+        "crud_objects": {
+            "Students": {
+                "operations": {
+                    "StudentsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Students"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "AcgEligReasonCode": "string*",
+                    "AgencyId": "string*",
+                    "AlienNumber": "string*",
+                    "ArAccountStatus": "string*",
+                    "ArBalance": "string*",
+                    "ArNextTransactionNumber": "string*",
+                    "AssignedAdmissionsRepId": "string*",
+                    "AthleticIdentifier": "string*",
+                    "BestTimeToContact": "string*",
+                    "CampusId": "string*",
+                    "CitizenId": "string*",
+                    "City": "string*",
+                    "CollegeId": "string*",
+                    "CountryId": "string*",
+                    "CountyId": "string*",
+                    "CreatedDateTime": "string*",
+                    "CumulativeGpa": "string*",
+                    "CumulativeGpaPoints": "string*",
+                    "CurrencyCodeId": "string*",
+                    "CurrentLda": "string*",
+                    "DataBlockIndicator": "boolean*",
+                    "DateOfBirth": "string*",
+                    "DbiModifiedDate": "string*",
+                    "DefaultAddressCode": "string*",
+                    "DefaultMasterStudentAddressId": "string*",
+                    "DefaultStudentAddressId": "string*",
+                    "Disabled": "string*",
+                    "DriverLicenseNumber": "string*",
+                    "DriverLicenseState": "string*",
+                    "EmailAddress": "string*",
+                    "EmployabilityAboutInfo": "string*",
+                    "EmployerId": "string*",
+                    "EmploymentStatusId": "string*",
+                    "ExternalStudentIdentifier": "string*",
+                    "ExtraCurricularActivityId": "string*",
+                    "FacebookUrl": "string*",
+                    "FaGradPlusCounselingDate": "string*",
+                    "FaRigorousHighSchoolProgramCodeId": "string*",
+                    "FirstName": "string*",
+                    "FullName": "string*",
+                    "GenderId": "string*",
+                    "GpaCredits": "string*",
+                    "HispanicLatino": "string*",
+                    "HsAcademicGpa": "string*",
+                    "InstagramUrl": "string*",
+                    "IsActive": "boolean*",
+                    "IsAllowedBulkRegistrationByTrack": "string*",
+                    "IsBadAddress": "boolean*",
+                    "IsBadPhone": "boolean*",
+                    "IsDdVeteran": "boolean*",
+                    "IsEftDefaultForStipends": "boolean*",
+                    "IsExcludedCrmIntegration": "boolean*",
+                    "IsInDistrict": "boolean*",
+                    "IsSscrError11Received": "boolean*",
+                    "LastActivityDate": "string*",
+                    "LastFourSsn": "string*",
+                    "LastInterestDate": "string*",
+                    "LastModifiedDateTime": "string*",
+                    "LastModifiedUserId": "string*",
+                    "LastName": "string*",
+                    "LastNameFirstFour": "string*",
+                    "LastStatementBeginDate": "string*",
+                    "LastStatementCloseDate": "string*",
+                    "LastStatementDate": "string*",
+                    "LeadDate":"string*",
+                    "LeadSourceId": "string*",
+                    "LeadTypeId": "string*",
+                    "LinkedInUrl": "string*",
+                    "MaidenName": "string*",
+                    "MaritalStatusId": "string*",
+                    "Mi": "string*",
+                    "MiddleName": "string*",
+                    "MobilePhoneNumber": "string*",
+                    "NationalityId": "string*",
+                    "NickName": "string*",
+                    "NiStudent": "string*",
+                    "Note": "string*",
+                    "OriginalAssignedAdmissionsRepId": "string*",
+                    "OriginalExpectedStartDate": "string*",
+                    "OriginalStartDate": "string*",
+                    "OtherEmailAddress": "string*",
+                    "OtherPhoneNumber": "string*",
+                    "PersonId": "string*",
+                    "PhoneNumber": "string*",
+                    "Pin": "string*",
+                    "PostalCode": "string*",
+                    "PostalCodeFirstThree": "string*",
+                    "PreferredContactType": "string*",
+                    "PreferredName": "string*",
+                    "PreviousEducationGpa": "string*",
+                    "PreviousEducationId": "string*",
+                    "ProgramGroupId": "string*",
+                    "ProgramId": "string*",
+                    "RawFirstName":"string*",
+                    "RawLastName": "string*",
+                    "RawPhoneNumber": "string*",
+                    "SchoolStatusId": "string*",
+                    "ShiftId": "string*",
+                    "SmsServiceProviderId":"string*",
+                    "SourceSystem": "string*",
+                    "Ssn": "string*",
+                    "StartDate": "string*",
+                    "State": "string*",
+                    "StatementComment": "string*",
+                    "StreetAddress": "string*",
+                    "StreetAddress2": "string*",
+                    "StudentFullName": "string*",
+                    "StudentIdentifier": "string*",
+                    "StudentNumber": "string*",
+                    "SubscribeToSms": "string*",
+                    "Suffix":"string*",
+                    "SuffixId": "string*",
+                    "TitleId":"string*",
+                    "TwitterUrl": "string*",
+                    "Veteran": "string*",
+                    "WorkPhoneNumber": "string*",
+                    "WorkPhoneNumberExtension": "string*"
+                }
+            }
+        }
+    },
+    "rest": {
+        "config": {
+            "baseUrl": "https://{tenant_id}",
+            "get": {
+                "query_parameters": {
+                },
+                "pagination": {
+                    "mode": "skip_take",
+                    "path":[],
+                    "page_size":"{page_size}",
+                    "params":{
+                        "$top":"{take_count}",
+                        "$skip":"{skip_count}",
+                        "$count": "true"
+                    }
+                }
+            },
+            "call_handling": "generic",
+            "authentication": "aeries",
+            "test_connection": {
+                "url": "/ds/campusnexus/Students?$top=1&$skip=0&$count=true"
+            },
+            "accept": "application/json",
+            "headers": {
+                "Authorization": "{client_secret}"
+            }
+        }
+        
+    },
+    "connection": {
+        "items": [
+            {
+                "name": "page_size",
+                "type": "textbox",
+                "label": "Page Size",
+                "value": "1000"
+            }
+        ]
+    }
+}
