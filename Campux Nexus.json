@@ -2,6 +2,900 @@
     "schema": {
         "options": {},
         "crud_objects": {
+            "Agencies": {
+                "operations": {
+                    "AgenciesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Agencies"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "AgencyTypeId": "string*",
+                    "CampusGroupId": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "FundSourceId": "string*",
+                    "IsActive": "boolean*",
+                    "IsExcludedCrmIntegration": "boolean*",
+                    "IsSystemCode": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "MainAgencyBranchId": "string*",
+                    "Name": "string*"
+                }
+            },
+            "AgencyBranches": {
+                "operations": {
+                    "AgencyBranchesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/AgencyBranches"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "AgencyId": "string*",
+                    "BillingMethodId": "string*",
+                    "CampusGroupId": "string*",
+                    "City": "string*",
+                    "CompanyName": "string*",
+                    "ContactFirstName": "string*",
+                    "ContactLastName": "string*",
+                    "CountryId": "string*",
+                    "CreatedDateTime": "date*",
+                    "Division": "string*",
+                    "EmailAddress": "string*",
+                    "GstNumber": "string*",
+                    "IndustryId": "string*",
+                    "InvoiceNumberMask": "string*",
+                    "InvoiceType": "string*",
+                    "IsDisbursementBatchCreated": "boolean*",
+                    "IsExcludedCrmIntegration": "boolean*",
+                    "IsSponsor": "boolean*",
+                    "LastInvoiceNumber": "string*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "LastStatementCloseDate": "date*",
+                    "LastStatementDate": "date*",
+                    "Name": "string*",
+                    "OrganizationId": "string*",
+                    "PhoneNumber": "string*",
+                    "PostalCode": "string*",
+                    "State": "string*",
+                    "StatementAmount": "string*",
+                    "StatementComment": "string*",
+                    "StreetAddress": "string*"
+                }
+            },
+            "AgencyTypes": {
+                "operations": {
+                    "AgencyTypesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/AgencyTypes"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "LastModifiedDateTime": "date",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*"
+                }
+            },
+            "Buildings": {
+                "operations": {
+                    "BuildingsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Buildings"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CampusId": "string*",
+                    "City": "string*",
+                    "CloseTime": "date*",
+                    "Code": "string*",
+                    "Comment": "string*",
+                    "ContactEmail": "string*",
+                    "ContactName": "string*",
+                    "ContactTitle": "string*",
+                    "CountryId": "string*",
+                    "CreatedDateTime": "date*",
+                    "FaxNumber": "string*",
+                    "IsActive": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "date*",
+                    "LocationId": "string*",
+                    "Name": "string*",
+                    "NumberOfRooms": "string*",
+                    "OpenTime": "date*",
+                    "PhoneNumber": "string*",
+                    "PostalCode": "string*",
+                    "State": "string*",
+                    "StreetAddress": "string*",
+                    "Weekdays": "string*"
+                }
+            },
+            "CampusGroups": {
+                "operations": {
+                    "CampusGroupsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/CampusGroups"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "ApproverStaffId": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "FinancialCampusGroup": "string*",
+                    "IsActive": "boolean*",
+                    "IsSystemCode": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "date*",
+                    "Name": "string*",
+                    "SaStmtComments": "string*",
+                    "SaStmtLastCloseDate": "date*",
+                    "Type": "string*"
+                }
+            },
+            "Countries": {
+                "operations": {
+                    "CountriesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Countries"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "IsExcludedCrmIntegration": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*",
+                    "PhoneMask": "string*",
+                    "SsnMask": "string*"
+                }
+            },
+            "Counties": {
+                "operations": {
+                    "CountiesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Counties"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CampusGroupId": "string*",
+                    "Code": "string*",
+                    "CountyFips": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*",
+                    "State": "string*"
+                }
+            },
+            "EmployerGroups": {
+                "operations": {
+                    "EmployerGroupsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/EmployerGroups"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CampusGroupId": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "DataQueryIdentifier": "string*",
+                    "ExpirationDate": "date*",
+                    "GroupType": "string*",
+                    "IsActive": "boolean*",
+                    "IsPublicGroup": "boolean*",
+                    "JobFrequency": "string*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "LastRefreshDate": "date*",
+                    "Name": "string*",
+                    "OwnerStaffId": "string*",
+                    "SqlQuery": "string*",
+                    "ViewQuery": "string*"
+                }
+            },
+            "EmployerGroupMembers": {
+                "operations": {
+                    "EmployerGroupMembersList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/EmployerGroupMembers"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "AddedByUserId": "string*",
+                    "CampusGroupId": "string*",
+                    "CreatedDateTime": "date*",
+                    "EffectiveDate": "date*",
+                    "EmployerGroupId": "string*",
+                    "EmployerId": "string*",
+                    "IsActive": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "RemovedByUserId": "boolean*",
+                    "RemovedDate": "date*"
+                }
+            },
+            "Ethnicities": {
+                "operations": {
+                    "EthnicitiesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Ethnicities"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "IsSystemCode": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*"
+                }
+            },
+            "Genders": {
+                "operations": {
+                    "GendersList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Genders"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "IsExcludedCrmIntegration": "boolean*",
+                    "IsSystemCode": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*"
+                }
+            },
+            "GenderPronouns": {
+                "operations": {
+                    "GenderPronounsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/GenderPronouns"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*"
+                }
+            },
+            "Industries": {
+                "operations": {
+                    "IndustriesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Industries"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CampusGroupId": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*",
+                    "SicCode": "string*"
+                }
+            },
+            "Locations": {
+                "operations": {
+                    "LocationsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Locations"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CampusGroupId": "string*",
+                    "City": "string*",
+                    "Code": "string*",
+                    "CountryId": "string*",
+                    "CountyId": "string*",
+                    "CreatedDateTime": "date*",
+                    "FaxNumber": "string*",
+                    "IsActive": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "date*",
+                    "Name": "string*",
+                    "PhoneNumber": "string*",
+                    "PostalCode": "string*",
+                    "StateCode": "string*",
+                    "StreetAddress": "string*"
+                }
+            },
+            "Nationalities": {
+                "operations": {
+                    "NationalitiesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Nationalities"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*"
+                }
+            },
+            "ResidencyTypes": {
+                "operations": {
+                    "ResidencyTypesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/ResidencyTypes"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CampusGroupId": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*"
+                }
+            },
+            "ResidencyTypeStatusCodeAssociations": {
+                "operations": {
+                    "ResidencyTypeStatusCodeAssociationsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/ResidencyTypeStatusCodeAssociations"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CreatedDateTime": "date*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "ResidencyStatusCodeId": "string*",
+                    "ResidencyTypeId": "string*"
+                }
+            },
+            "ResidencyStatusCodes": {
+                "operations": {
+                    "ResidencyStatusCodesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/ResidencyStatusCodes"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CampusGroupId": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*"
+                }
+            },
+            "Rooms": {
+                "operations": {
+                    "RoomsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Rooms"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "BuildingId": "string*",
+                    "BuildingNumber": "string*",
+                    "Capacity": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "IsConflictsChecked": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "date*",
+                    "Name": "string*",
+                    "RoomNumber": "string*"
+                }
+            },
+            "SchoolStatusDetails": {
+                "operations": {
+                    "SchoolStatusDetailsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/SchoolStatusDetails"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "AccountStatusId": "string*",
+                    "CanChangeToSchoolStatusId": "string*",
+                    "CreatedDateTime": "date*",
+                    "DaysAllowed": "string*",
+                    "DaysAllowedUndoStatusChange": "string*",
+                    "DaysBeforeAllowed": "string*",
+                    "IsAccountStatusChangeAllowed": "boolean*",
+                    "IsAccountStatusOverridden": "boolean*",
+                    "IsActive": "boolean*",
+                    "IsPlacedStatusOverriden": "boolean*",
+                    "IsPlacementStatusChangeAllowed": "boolean*",
+                    "IsRefundCalculationTriggered": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "PlacementStatusId": "string*",
+                    "SchoolStatusId": "string*",
+                    "StaffGroupId": "string*",
+                    "SystemSchoolStatusDetailId": "string*"
+                }
+            },
+            "Staff": {
+                "operations": {
+                    "StaffList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Staff"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "AdmissionsRepTypeId": "string*",
+                    "CampusGroupId": "string*",
+                    "CellPhoneNumber": "string*",
+                    "CertificationList": "string*",
+                    "City": "string*",
+                    "Code": "string*",
+                    "ContactManagereStudentListInclude": "string*",
+                    "ContactManagerStudentListShow": "string*",
+                    "CountryId": "string*",
+                    "CreatedDateTime": "date*",
+                    "DefaultAwardYearId": "string*",
+                    "DefaultModule": "string*",
+                    "DefaultSyCampusId": "string*",
+                    "DefaultTermId": "string*",
+                    "Degree": "string*",
+                    "Department": "string*",
+                    "DocumentPolicyId": "string*",
+                    "EmailAddress": "string*",
+                    "EmailReplyTo": "string*",
+                    "EmployeeNumber": "string*",
+                    "EmploymentLegalEntityIdentifier": "string*",
+                    "Extension": "string*",
+                    "FirstName": "string*",
+                    "FullName": "string*",
+                    "HiredDate": "date*",
+                    "HomePhoneNumber": "string*",
+                    "IsActive": "boolean*",
+                    "IsAllowedAccessConnectedStudentEnrollmentPeriod": "boolean*",
+                    "IsAllowedAccessMasterCourseProgramOverride": "boolean*",
+                    "IsAllowedCommonlineHoldRelease": "boolean*",
+                    "IsAllowedContactManagerShowAllOption": "boolean*",
+                    "IsAllowedDateExclusion": "boolean*",
+                    "IsAllowedEditTaskTemplateSource": "boolean*",
+                    "IsAllowedEditTaxRatesPendingCharges": "boolean*",
+                    "IsAllowedFulfillmentDpa": "boolean*",
+                    "IsAllowedMultipleCampusGroups": "string*",
+                    "IsAllowedOverrideAuditDesignationDeadline": "boolean*",
+                    "IsAllowedOverrideClosedTerm": "boolean*",
+                    "IsAllowedOverrideEnrollmentDates": "boolean*",
+                    "IsAllowedOverrideMaxClass": "boolean*",
+                    "IsAllowedReassignCourse": "boolean*",
+                    "IsAllowedToAccessTransferCampus": "boolean*",
+                    "IsAllowedToAccessTransferEnrollment": "boolean*",
+                    "IsAllowedToAccessTransferEnrollmentAndCampus": "boolean*",
+                    "IsAllowedToAddCollege": "boolean*",
+                    "IsAllowedToAddCourse": "boolean*",
+                    "IsAllowedToAssignAdmissionsRepEnrollment": "boolean*",
+                    "IsAllowedToAssignPreviousEducationEnrollment": "boolean*",
+                    "IsAllowedToCancelClassSection": "boolean*",
+                    "IsAllowedToClearWaitlist": "boolean*",
+                    "IsAllowedToEditAdvisor": "boolean*",
+                    "IsAllowedToEditDisbursementDates": "boolean*",
+                    "IsAllowedToEditExceptionDetails": "boolean*",
+                    "IsAllowedToEditPaymentPeriods": "boolean*",
+                    "IsAllowedToEditSystemDefinedBillingTransactionCode": "boolean*",
+                    "IsAllowedToModifyFeeSchedule": "boolean*",
+                    "IsAllowedToOverrideCodChangeStatus": "boolean*",
+                    "IsAllowedToOverrideCourseContactHourComparison": "boolean*",
+                    "IsAllowedToOverrideCoursePreRequisites": "boolean*",
+                    "IsAllowedToOverrideCutoffDate": "boolean*",
+                    "IsAllowedToOverrideDisbursementBatch": "boolean*",
+                    "IsAllowedToOverrideFaHoldGroup": "boolean*",
+                    "IsAllowedToOverrideIncompleteGradeExpirationDate": "boolean*",
+                    "IsAllowedToOverrideInstructorCourseAssociation": "boolean*",
+                    "IsAllowedToOverrideLastDateToWithdraw": "boolean*",
+                    "IsAllowedToOverrideLockedTermSequence": "boolean*",
+                    "IsAllowedToOverrideMaxClassUserCampuses": "boolean*",
+                    "IsAllowedToOverrideMaxWaitList": "boolean*",
+                    "IsAllowedToOverridePreCoRequisiteRequirement": "boolean*",
+                    "IsAllowedToOverrideRegistrationGroup": "boolean*",
+                    "IsAllowedToOverrideRegistrationHold": "boolean*",
+                    "IsAllowedToOverrideRegistrationLocks": "boolean*",
+                    "IsAllowedToOverrideSapDefinedDates": "boolean*",
+                    "IsAllowedToOverrideSapPartialTerm": "boolean*",
+                    "IsAllowedToOverrideSapPpDefinedDates": "boolean*",
+                    "IsAllowedToOverrideSapStatus": "boolean*",
+                    "IsAllowedToOverrideStatusChangeDays": "boolean*",
+                    "IsAllowedToOverrideTranscriptHoldGroup": "boolean*",
+                    "IsAllowedToOverrideTransferCreditApproval": "boolean*",
+                    "IsAllowedToOverrideTransferOptions": "boolean*",
+                    "IsAllowedToPerformManualRefundCalculation": "boolean*",
+                    "IsAllowedToPrintChecksEditComment": "boolean*",
+                    "IsAllowedToReallocateCenter": "boolean*",
+                    "IsAllowedToRebuildTermSummaryRelationships": "boolean*",
+                    "IsAllowedToViewSsnReports": "boolean*",
+                    "IsAllowedToWaiveDegreeProgressRequirement": "boolean*",
+                    "IsAllowedToWaiveRetakeFee": "boolean*",
+                    "IsAssociateEmployerOtherCampusAllowed": "boolean*",
+                    "IsAutoCmActivitiesAllowed": "boolean*",
+                    "IsAutomatedUser": "boolean*",
+                    "IsAxFaculty": "boolean*",
+                    "IsBlockedViewSsnUi": "boolean*",
+                    "IsCashier": "boolean*",
+                    "IsConflictsChecked": "boolean*",
+                    "IsContactManagerShownOnStartup": "boolean*",
+                    "IsCustomSearchAllowed": "boolean*",
+                    "IsDefaultReportWizardUsed": "boolean*",
+                    "IsDeleteBilledChargesLeaseAllowed": "boolean*",
+                    "IsDeleteUnbilledChargesLeaseAllowed": "boolean*",
+                    "IsDropStatusMessageBox": "boolean*",
+                    "IsDuplicateEmpOverrideAllowed": "boolean*",
+                    "IsExcludedCrmIntegration": "boolean*",
+                    "IsFacultySynced": "boolean*",
+                    "IsGlobalSearchAllowed": "boolean*",
+                    "IsHousingPeriodDateEditAllowed": "boolean*",
+                    "IsJobTypeEditingSecurityAllowed": "boolean*",
+                    "IsLocked": "boolean*",
+                    "IsManualBillingNotAllowed": "boolean*",
+                    "IsOverrideExecutiveReportOptionsAllowed": "boolean*",
+                    "IsOverrideLeaseDateAllowed": "boolean*",
+                    "IsOverrideRoomMaxCapacityAllowed": "boolean*",
+                    "IsPrimaryContactSecurityAllowed": "boolean*",
+                    "IsReportServerSelected": "boolean*",
+                    "IsStudentListSaved": "boolean*",
+                    "IsSystem": "boolean*",
+                    "IsTest": "boolean*",
+                    "IsToolbarUsed": "boolean*",
+                    "IsUserLevelOverrideAccessAllowed": "boolean*",
+                    "IsViewListBar": "boolean*",
+                    "IsViewToolBar": "boolean*",
+                    "Key": "string*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "LastName": "string*",
+                    "Mi": "string*",
+                    "ModuleId": "string*",
+                    "Note": "string*",
+                    "Number": "string*",
+                    "OfficePhoneNumber": "string*",
+                    "Password": "string*",
+                    "PasswordExpirationDate": "date*",
+                    "PasswordRuleProfileId": "string*",
+                    "PayRate": "string*",
+                    "PayType": "string*",
+                    "PersonId": "string*",
+                    "PhoneNumber": "string*",
+                    "Position": "string*",
+                    "PostalCode": "string*",
+                    "PreferredName": "string*",
+                    "ReportDefault": "string*",
+                    "ReportsToStaffId": "string*",
+                    "Resume": "string*",
+                    "Salt": "string*",
+                    "SearchResults": "string*",
+                    "ShowDefaultOnStartup": "boolean*",
+                    "Signature": "string*",
+                    "Ssn": "string*",
+                    "StaffName": "string*",
+                    "StaffPicture": "string*",
+                    "State": "string*",
+                    "StreetAddress": "string*",
+                    "StreetAddress2": "string*",
+                    "Suffix": "string*",
+                    "TaskPolicyId": "string*",
+                    "Title": "string*",
+                    "WorkCity": "string*",
+                    "WorkFaxPhoneNumber": "string*",
+                    "WorkPostalCode": "string*",
+                    "WorkState": "string*",
+                    "WorkStreetAddress": "string*",
+                    "WorkStreetAddress2": "string*"
+                }
+            },
+            "StaffGroups": {
+                "operations": {
+                    "StaffGroupsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/StaffGroups"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "AdvisorModule": "string*",
+                    "AllowDropLdaAttendChange": "boolean*",
+                    "CanOverrideLeadDuplicateWarning": "boolean*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "GroupType": "string*",
+                    "IsActive": "boolean*",
+                    "IsCampusLinkAmbassadorUse": "boolean*",
+                    "IsExcludedCrmIntegration": "boolean*",
+                    "IsPositivePayUse": "boolean*",
+                    "IsRequiredForEnroll": "boolean*",
+                    "IsSystemCode": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*"
+                }
+            },
+            "StaffGroupFundSourcePermissions": {
+                "operations": {
+                    "StaffGroupFundSourcePermissionsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/StaffGroupFundSourcePermissions"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CreatedDateTime": "date*",
+                    "FundSourceId": "string*",
+                    "IsAllowedToAdd": "boolean*",
+                    "IsAllowedToApprove": "boolean*",
+                    "IsAllowedToDelete": "boolean*",
+                    "IsAllowedToDeletePaidRefund": "boolean*",
+                    "IsAllowedToDeletePaidStipend": "boolean*",
+                    "IsAllowedToDeletePayment": "boolean*",
+                    "IsAllowedToDeleteScheduledRefund": "boolean*",
+                    "IsAllowedToDeleteScheduledStipend": "boolean*",
+                    "IsAllowedToEdit": "boolean*",
+                    "IsAllowedToEditPaidRefund": "boolean*",
+                    "IsAllowedToEditPaidStipend": "boolean*",
+                    "IsAllowedToEditPayeeOnScheduledRefund": "boolean*",
+                    "IsAllowedToEditPayeeOnScheduledStipend": "boolean*",
+                    "IsAllowedToEditPayment": "boolean*",
+                    "IsAllowedToEditScheduledRefund": "boolean*",
+                    "IsAllowedToEditScheduledStipend": "boolean*",
+                    "IsAllowedToPost": "boolean*",
+                    "IsAllowedToPostRefund": "boolean*",
+                    "IsAllowedToPostStipend": "boolean*",
+                    "IsAllowedToScheduleRefund": "boolean*",
+                    "IsAllowedToScheduleStipend": "boolean*",
+                    "IsAllowedToView": "boolean*",
+                    "IsAllowedToVoidPaidRefund": "boolean*",
+                    "IsAllowedToVoidPaidStipend": "boolean*",
+                    "IsAllowedToVoidPayment": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "StaffGroupId": "string*"
+                }
+            },
+            "StaffGroupRefreshRules": {
+                "operations": {
+                    "StaffGroupRefreshRulesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/StaffGroupRefreshRules"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CreatedDateTime": "date*",
+                    "Frequency": "string*",
+                    "IsRefreshAllowed": "boolean*",
+                    "LastModfiedUserId": "string*",
+                    "LastModifiedDateTime": "date*",
+                    "StaffGroupId": "string*"
+                }
+            },
             "Students": {
                 "operations": {
                     "StudentsList": {
@@ -136,6 +1030,324 @@
                     "Veteran": "string*",
                     "WorkPhoneNumber": "string*",
                     "WorkPhoneNumberExtension": "string*"
+                }
+            },
+            "StudentAdvisors": {
+                "operations": {
+                    "StudentAdvisorsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/StudentAdvisors"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "StaffGroupId": "string*",
+                    "StudentEnrollmentPeriodId": "string*",
+                    "AdvisorModule": "string*",
+                    "CreatedDateTime": "date*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "StaffId": "string*"
+                }
+            },
+            "StudentAgencyBranches": {
+                "operations": {
+                    "StudentGroupMembersList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/StudentAgencyBranches"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "AgencyBranchId": "string*",
+                    "CreatedDateTime": "date*",
+                    "EndDate": "date*",
+                    "IsExcludedCrmIntegration": "boolean*",
+                    "IsPrimaryBillingAffiliate": "boolean*",
+                    "LastModifiedDateTime": "date",
+                    "LastModifiedUserId": "string*",
+                    "Location": "string*",
+                    "Note": "string*",
+                    "StartDate": "date*",
+                    "StudentFunction": "string*",
+                    "StudentId": "string*",
+                    "Title": "string*"
+                }
+            },
+            "StudentGroups": {
+                "operations": {
+                    "StudentList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/StudentGroups"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CampusGroupId": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "DataQueryIdentifier": "string*",
+                    "ExpirationDate": "date*",
+                    "GroupType": "string*",
+                    "IsActive": "boolean*",
+                    "IsPortalGroup": "boolean*",
+                    "IsPublic": "boolean*",
+                    "IsSprocQuery": "boolean*",
+                    "IsTransferMonitoringGroup": "boolean*",
+                    "IsUsedForAutoAwardCoa": "boolean*",
+                    "IsUsedForAutoAwardRules": "boolean*",
+                    "JobFrequency": "string*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "LastRefreshDate": "date*",
+                    "Name": "string*",
+                    "OwnerStaffId": "string*",
+                    "PreserveManualAddedStudentsOnRefresh": "boolean*",
+                    "SqlQuery": "string*",
+                    "ViewQuery": "string*"
+                }
+            },
+            "StudentGroupMembers": {
+                "operations": {
+                    "StudentGroupMembersList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/StudentGroupMembers"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "AddedByUserId": "string*",
+                    "AwardYear": "string*",
+                    "CampusId": "string*",
+                    "CreatedDateTime": "date*",
+                    "EffectiveDate": "date*",
+                    "IsActive": "boolean*",
+                    "IsManualUpdated": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "RemovedByUserId": "string*",
+                    "RemovedDate": "date*",
+                    "StudentGroupId": "string*",
+                    "StudentId": "string*"
+                }
+            },
+            "StudentResidencyDetails": {
+                "operations": {
+                    "StudentResidencyDetailsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/StudentResidencyDetails"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CreatedDateTime": "date*",
+                    "EffectiveDate": "date*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Note": "string*",
+                    "ResidencyStatusCodeId": "string*",
+                    "ResidencyTypeId": "string*",
+                    "StudentId": "string*"
+                }
+            },
+            "StudentSchoolStatusHistory": {
+                "operations": {
+                    "StudentSchoolStatusHistoryList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/StudentSchoolStatusHistory"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "CreatedDateTime": "date*",
+                    "EffectiveDate": "date*",
+                    "EnrollmentStatusNewUnitValue": "string*",
+                    "EnrollmentStatusPreviousUnitValue": "string*",
+                    "EnrollmentStatusTermId": "string*",
+                    "InternalNote": "string*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Lda": "date*",
+                    "NewEnrollmentStatusId": "string*",
+                    "NewSchoolStatusId": "string*",
+                    "NewSystemSchoolStatusId": "string*",
+                    "Note": "string*",
+                    "NsldsWithdrawalDate": "date*",
+                    "PreviousEnrollmentStatusId": "string*",
+                    "PreviousSchoolStatusId": "string*",
+                    "PreviousSystemSchoolStatusId": "string*",
+                    "SchoolStatusChangeReasonId": "string*",
+                    "StatusBeginDate": "date*",
+                    "StatusChangeRecordStatus": "string*",
+                    "StatusChangeType": "string*",
+                    "StatusReturnDate": "date*",
+                    "StudentEnrollmentPeriodId": "string*",
+                    "StudentId": "string*",
+                    "StudentSchoolStatusDescription": "string*",
+                    "TaskId": "string*"
+                }
+            },
+            "Suffixes": {
+                "operations": {
+                    "SuffixesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Suffixes"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "IsSystemCode": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*"
+                }
+            },
+            "SystemSchoolStatusDetails": {
+                "operations": {
+                    "SystemSchoolStatusDetailsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/SystemSchoolStatusDetails"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "AccountStatusId": "string*",
+                    "CanChangeToSystemSchoolStatusId": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsAccountStatusChangeAllowed": "boolean*",
+                    "IsAccountStatusOverridden": "boolean*",
+                    "IsActive": "boolean*",
+                    "IsPlacedStatusOverridden": "boolean*",
+                    "IsPlacementStatusChangeAllowed": "boolean*",
+                    "IsRefundCalcTriggered": "boolean*",
+                    "IsSchoolStatusGridUsed": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "MaxAllowedDaysElapsedFromLastStatusChange": "string*",
+                    "MaxDaysAllowUndoStatusChange": "string*",
+                    "MinAllowedDaysElapsedFromLastStatusChange": "string*",
+                    "PlacementStatusId": "string*",
+                    "StaffGroupId": "string*",
+                    "SystemSchoolStatusId": "string*"
+                }
+            },
+            "Titles": {
+                "operations": {
+                    "TitlesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/Titles"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "IsExcludedCrmIntegration": "boolean*",
+                    "IsSystemCode": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*"
+                }
+            },
+            "UsaStates": {
+                "operations": {
+                    "UsaStatesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ds/campusnexus/UsaStates"
+                        },
+                        "processing_options": {
+                            "output_field": "value"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "Id",
+                "resources": {
+                    "Id": "string*",
+                    "Code": "string*",
+                    "CreatedDateTime": "date*",
+                    "IsActive": "boolean*",
+                    "IsExcludedCrmIntegration": "boolean*",
+                    "LastModifiedDateTime": "date*",
+                    "LastModifiedUserId": "string*",
+                    "Name": "string*"
                 }
             }
         }
