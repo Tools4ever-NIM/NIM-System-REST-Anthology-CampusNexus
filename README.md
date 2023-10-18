@@ -1,4 +1,4 @@
-# NIM-System-REST-Campus-Nexus
+# NIM-System-REST-Anthology-CampusNexus
 
 # Create Application Key
 The purpose of this is to provide steps on generating and using key based authentication for Student Rest APIs
